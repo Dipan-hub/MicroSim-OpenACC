@@ -8,6 +8,7 @@
  
 #pragma acc routine seq
 
+
 */
 double FunctionTau(double **phi, double *relaxCoeff, long idx, long NUMPHASES)
 {
