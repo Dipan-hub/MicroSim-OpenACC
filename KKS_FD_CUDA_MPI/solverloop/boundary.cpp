@@ -1,6 +1,4 @@
-
-```cpp
-#include "boundary.hpp"
+#include "boundary.h"
 
 #pragma acc kernels
 void applyNeumann(double **field,
@@ -220,5 +218,4 @@ void applyBoundaryCondition(double **field, long fieldCode, long numFields,
         }
     }
 }
-```
 
