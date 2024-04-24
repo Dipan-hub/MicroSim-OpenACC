@@ -1,8 +1,7 @@
-Here's the provided CUDA code converted to OpenACC C++. I've made the necessary changes to enable OpenACC directives and adapt the syntax accordingly:
 
-```cpp
 #include "calcPhaseComp.h"
 
+#pragma acc kernels
 void initMu(double **phi, double **comp, double **phaseComp, double **mu,
             long *thermo_phase, double temperature,
             long NUMPHASES, long NUMCOMPONENTS, long DIMENSION,
@@ -53,6 +52,7 @@ void initMu(double **phi, double **comp, double **phaseComp, double **mu,
     }
 }
 
+#pragma acc kernels
 void calcPhaseComp(double **phi, double **comp,
                    double **phaseComp, double **mu,
                    domainInfo* simDomain, controls* simControls,
