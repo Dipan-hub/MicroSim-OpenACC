@@ -6,6 +6,7 @@
 
  #ifdef __CUDA_ARCH__
  
+
 #pragma acc routine seq
 
 
